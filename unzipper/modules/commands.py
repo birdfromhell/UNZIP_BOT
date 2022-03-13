@@ -57,11 +57,11 @@ async def extract_dis_archive(_, message: Message):
     user_id = message.from_user.id
     download_path = f"{Config.DOWNLOAD_LOCATION}/{user_id}"
     if os.path.isdir(download_path):
-        return await unzip_msg.edit("`Already one process is going on, Don't spam you idiot 😑!` \n\nWanna Clear You Files from my server? Then just send **/clean** command!")
+        return await unzip_msg.edit("`Satu Tugas Sdang Di Laksanakan, Don't spam Me idiot 😑!` \n\ningin Menghapus File Anda dari server saya? Kirim Saja Perintah **/clean**!")
     if message.text and (re.match(https_url_regex, message.text)):
-        await unzip_msg.edit("**What do you want?**", reply_markup=Buttons.CHOOSE_E_U__BTNS)
+        await unzip_msg.edit("**Apa ang anda Inginkan?**", reply_markup=Buttons.CHOOSE_E_U__BTNS)
     elif message.document:
-        await unzip_msg.edit("**What do you want?**", reply_markup=Buttons.CHOOSE_E_F__BTNS)
+        await unzip_msg.edit("**Apa ang anda Inginkan?**", reply_markup=Buttons.CHOOSE_E_F__BTNS)
     else:
         await unzip_msg.edit("`Hold up! What Should I Extract 😳?`")
 

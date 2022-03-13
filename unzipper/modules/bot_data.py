@@ -20,7 +20,7 @@ class Buttons:
                 InlineKeyboardButton("File (Password) Extract 📂", callback_data="extract_file|tg_file|with_pass")
             ],
             [
-                InlineKeyboardButton("Cancel ❌", callback_data="cancel_dis")
+                InlineKeyboardButton("Batal ❌", callback_data="cancel_dis")
             ]
         ])
 
@@ -32,7 +32,7 @@ class Buttons:
                 InlineKeyboardButton("🔗 (Password) Url Extract 📂", callback_data="extract_file|url|with_pass")
             ],
             [
-                InlineKeyboardButton("Cancel ❌", callback_data="cancel_dis")
+                InlineKeyboardButton("Batal ❌", callback_data="cancel_dis")
             ]
         ])
 
@@ -47,56 +47,56 @@ class Buttons:
     
     ME_GOIN_HOME = InlineKeyboardMarkup([
             [
-                InlineKeyboardButton("Back 🏡", callback_data="megoinhome")
+                InlineKeyboardButton("Kembali 🏡", callback_data="megoinhome")
             ]
         ])
 
     SET_UPLOAD_MODE_BUTTONS = InlineKeyboardMarkup([
             [
-                InlineKeyboardButton("As Doc 📁", callback_data="set_mode|doc")
+                InlineKeyboardButton("Sebagai Doc 📁", callback_data="set_mode|doc")
             ],
             [
-                InlineKeyboardButton("As Video 📹", callback_data="set_mode|video")
+                InlineKeyboardButton("Sebagai Video 📹", callback_data="set_mode|video")
             ]
         ])
 
 
 class Messages:
     START_TEXT = """
-Hi **{}**, I'm **Nexa Unzipper Bot** 😇!
+Hi **{}**, I'm **Unzipper Bot** 😇!
 
-`I can extract archives like zip, rar, tar etc.`
+`Saya Bisa Mengextract archives Seperti zip, rar, tar etc.`
 
-**Made with ❤️ by @NexaBotsUpdates**
+**Made with ❤️ by @MustaxProject**
     """
 
     HELP_TXT = """
-**How To Extract? 🤔**
+**Bagaimana cara Mengextract Extract? 🤔**
 
-`1. Send the file or link that you want to extract.`
-`2. Click on extract button (If you sent a link use "Url Extract" button. If it's a file just use "File Extract" button).`
+`1. Kirim File Atau Link Yang Akan Di Extract.`
+`2. Klik Tombol extract(Jika kamu Menggunakan URL Klik Tombol "Url Extract". Jika Ini File Gunakan Tombol "File Extract").`
 
-**How To Change Upload Mode? 🤔**
- `Send` **/mode** `command to the bot. You can change upload mode from there.`
+**Bagaimana Mengganti Mode Upload ? 🤔**
+ `Kirim` Perintah **/mode** ` Ke Bot. Anda dapat mengubah mode Upload Disana.`
 
 **Note:**
-    **1.** `If your archive is password protected select` **(Password) Extract 📂** `mode. Bot isn't a GOD to know your file's password so If this happens just send that password!`
+    **1.** `Jika arsip Anda dilindungi kata sandi, pilih` **(Password) Extract 📂** `mode. Bot bukan TUHAN yang mengetahui kata sandi file Anda, jadi Jika ini terjadi, kirimkan saja kata sandi itu!`
     
-    **2.** `Please don't send corrupted files! If you sent a one by a mistake just send` **/clean** `command!`
+    **2.** `Jangan Kirim File Yang corrupted! Jika Anda mengirim satu karena kesalahan, kirim saja Perintah` **/clean**!`
     
-    **3.** `If your archive have 95 or more files in it then bot can't show all of extracted files to select from. So in that case if you can't see your file in the buttons just click on` "Upload All ♻️" `button. It'll send all extracted files to you!`
+    **3.** `Jika arsip Anda memiliki 95 atau lebih file di dalamnya, bot tidak dapat menampilkan semua file yang diekstraksi untuk dipilih. Jadi jika Anda tidak dapat melihat file Anda di tombol, cukup klik tombol` "Unggah Semua ♻️" `. Ini akan mengirim semua file yang diekstraksi kepada Anda!`
     """
 
     ABOUT_TXT = """
-**About Nexa Unzipper Bot,**
+**About Unzipper Bot,**
 
 ✘ **Language:** [Python](https://www.python.org/)
 ✘ **Framework:** [Pyrogram](https://docs.pyrogram.org/)
-✘ **Source Code:** [Itz-fork/Unzipper-Bot](https://github.com/Itz-fork/Unzipper-Bot)
-✘ **Developer:** [Itz-fork](https://github.com/Itz-fork)
+✘ **Source Code:** [Contact-Me](https://t.me/BIRD_from_HELL)
+✘ **Developer:** [BirdFromHell](https://t.me/BIRD_from_HELL)
 
 
-**Made with ❤️ by @NexaBotsUpdates**
+**Made with ❤️ by @MustaxProject**
     """
 
     LOG_TXT = """
@@ -111,30 +111,30 @@ Hi **{}**, I'm **Nexa Unzipper Bot** 😇!
 **Successfully Downloaded**
 
 **Download time:** `{}`
-**Status:** `Trying to extract the archive`
+**Status:** `Mencoba Mengextract File`
     """
 
     EXT_OK_TXT = """
 **Extraction Successfull!**
 
 **Extraction time:** `{}`
-**Status:** `Trying to upload`
+**Status:** `Mencoba Mengupload`
     """
 
     EXT_FAILED_TXT = """
-**Extraction Failed 😕!**
+**Extraction Gagal 😕!**
 
 **What to do?**
 
- - `Please make sure archive isn't corrupted`
- - `Please make sure that you selected the right mode!`
- - `May be Your archive format isn't supported 😔`
+ - `Pastikan arsip tidak rusak`
+ - `Pastikan Kamu memilih mode yang tepat!`
+ - `Mungkin format arsip Anda tidak didukung 😔`
 
-**Please report this at @Nexa_bots if you think this is a serious error**
+**Silahkan Lapor Ke @BIRD_from_HELL Jika Bot Terjadi Error**
     """
 
     ERROR_TXT = """
-**Error Happend 😕!**
+**Terjadi kesalahan 😕!**
 
 **ERROR:** {}
 
